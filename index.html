@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador⍟</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="./style2.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="titulo">Encriptador de Texto</h1>
+            <h2><img class="imagen-encabezado" src="Img/Foto encabezado2.jpg" alt="Silueta de Detective"></h2>
+        </header>
+        <main>
+            <section class="principal">
+                <textarea id="lectura" class="mensaje-input"  rows="9" cols="20" placeholder="Ingrese el texto aquí"></textarea>
+                <input id="Encriptar" type="button" value="Encriptar" class="boton-general" onclick="encriptador('#lectura');">     
+                <input id="Desencriptar" type="button" value="Desencriptar" class="boton-general" onclick="desencriptador('#lectura');">     
+            </section>
+            
+            <section class="secundario">
+                <textarea id="salida" class="mensaje-input" rows="9" cols="20" placeholder="Ningun texto encontrado" readonly></textarea>
+                <input id="copy" type="button" value="Copiar" class="boton-general" onclick="condicionesiniciales();" disabled>     
+            </section>
+
+        <script src="Encriptador.js"></script>
+        </main>
+        <footer>
+            <p class="copyrigth">&copy Copyrigth Adrianjac1 2024</p>
+        </footer>
+    </body>
+</html>
